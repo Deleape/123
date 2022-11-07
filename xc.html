@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>吴宝贝的个人相册</title>
+    <style>
+        body {
+            perspective: 2000px;
+            background:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fyiwen365.com%2Fzb_users%2Fupload%2F2020%2F03%2F202003161584370487900740.jpg&refer=http%3A%2F%2Fyiwen365.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1670402586&t=72ce6370d78e89b067f4c38cf55ba67e);
+            z-index: 1;
+            background-size: 100%;
+        }
+        
+        section {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            margin: 200px auto;
+            transform-style: preserve-3d;
+            /* 添加动画效果 */
+            animation: rotate 20s linear infinite;
+            /* text-align: center; */
+        }
+        
+        section:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+        
+        section div {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow:0 0 10px #fff;
+            -webkit-box-reflect:below 10px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,.8) 100%);
+        }
+        section div:nth-child(1) {
+            transform: translateX(10px) translateZ(500px);
+            background: url(https://thumbnail0.baidupcs.com/thumbnail/85aa2dfe6kf45a0cb10d104ef097b9df?fid=2806491756-250528-315187189887875&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-pseTYm8AhZmf9WZijPmjOU%2fq7N4%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1) no-repeat;
+            background-size: cover;
+            
+        }
+        section div:nth-child(2) {
+            /* 先旋转，再移动 */
+            transform: rotateY(45deg)  translateX(10px) translateZ(500px);
+            background: url(https://thumbnail0.baidupcs.com/thumbnail/5a39770b2l63bd951991cb459a635311?fid=2806491756-250528-16297030478754&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-CN1ZyRkMK5112rc3%2bVvfitJzepY%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1) no-repeat;
+            background-size: cover;
+        }
+        section div:nth-child(3) {
+            transform: rotateY(90deg)  translateX(10px) translateZ(500px);
+            background: url(https://thumbnail0.baidupcs.com/thumbnail/8168f1ef1g8d7653039b196936d2a4a2?fid=2806491756-250528-1061431470457961&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ugOAcG2Cm0QP22KBQpz83Tl9P%2bA%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1) no-repeat;
+            background-size: cover;
+        }
+        
+        section div:nth-child(4) {
+            transform: rotateY(135deg) translateX(10px)  translateZ(500px);
+            background: url(https://thumbnail0.baidupcs.com/thumbnail/825aee5ffv1dee644ff6ae166283ba61?fid=2806491756-250528-479226044242272&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-jz2UaTovmo9M4Abm15om4LhEgUg%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1) no-repeat;
+            background-size: cover;
+        }
+        
+        section div:nth-child(5) {
+            transform: rotateY(180deg) translateX(10px)  translateZ(500px);
+            background: url(https://thumbnail0.baidupcs.com/thumbnail/15f14eeb5u678d310ea6fa330591c606?fid=2806491756-250528-49078101609251&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-QSQ8JyNnGpK3jhEEFBI9TCZPOFk%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1) no-repeat;
+            background-size: cover;
+        }
+        
+        section div:nth-child(6) {
+            transform: rotateY(225deg)  translateX(10px)  translateZ(500px);
+            background: url(https://thumbnail0.baidupcs.com/thumbnail/a122ceffbp695505e35a0c509f147830?fid=2806491756-250528-996065984530606&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HhDwRpz0UVEnTU53LElAlx3dXOs%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1) no-repeat;
+            background-size: cover;
+        }
+
+        section div:nth-child(7) {
+            transform: rotateY(270deg) translateX(10px)   translateZ(500px);
+            background: url(https://thumbnail0.baidupcs.com/thumbnail/0f3a43305g63f3ebe47309be7cf06299?fid=2806491756-250528-1012989922477272&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-%2bjTL7w408eXQFkqXYeopfZ17NSs%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1) no-repeat;
+            background-size: cover;
+        }
+        section div:nth-child(8) {
+            transform: rotateY(315deg) translateX(10px)  translateZ(500px);
+            background: url(https://thumbnail0.baidupcs.com/thumbnail/cd1a2950fl45cbc03a51087409af830d?fid=2806491756-250528-1033611212116289&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-fCZjFCVuNIXlLV7Dt%2bfQFFwLhRk%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1) no-repeat;
+            background-position: 55%,50%;
+            background-size: cover;
+        }
+        
+        section div:nth-child(1):hover,
+        section div:nth-child(2):hover,
+        section div:nth-child(3):hover,
+        section div:nth-child(4):hover,
+        section div:nth-child(5):hover,
+        section div:nth-child(6):hover,
+        section div:nth-child(7):hover,
+        section div:nth-child(8):hover{
+            box-shadow: 0 0 2000px #208dc4;
+            
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <section>
+        <div onclick="window.open('https://thumbnail0.baidupcs.com/thumbnail/85aa2dfe6kf45a0cb10d104ef097b9df?fid=2806491756-250528-315187189887875&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-pseTYm8AhZmf9WZijPmjOU%2fq7N4%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1')"></div>
+        <div onclick="window.open('https://thumbnail0.baidupcs.com/thumbnail/5a39770b2l63bd951991cb459a635311?fid=2806491756-250528-16297030478754&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-CN1ZyRkMK5112rc3%2bVvfitJzepY%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1')"> </div>
+        <div onclick="window.open('https://thumbnail0.baidupcs.com/thumbnail/8168f1ef1g8d7653039b196936d2a4a2?fid=2806491756-250528-1061431470457961&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ugOAcG2Cm0QP22KBQpz83Tl9P%2bA%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1')"> </div>
+        <div onclick="window.open('https://thumbnail0.baidupcs.com/thumbnail/825aee5ffv1dee644ff6ae166283ba61?fid=2806491756-250528-479226044242272&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-jz2UaTovmo9M4Abm15om4LhEgUg%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1')"></div>
+        <div onclick="window.open('https://thumbnail0.baidupcs.com/thumbnail/15f14eeb5u678d310ea6fa330591c606?fid=2806491756-250528-49078101609251&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-QSQ8JyNnGpK3jhEEFBI9TCZPOFk%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1')" ></div>
+        <div onclick="window.open('https://thumbnail0.baidupcs.com/thumbnail/a122ceffbp695505e35a0c509f147830?fid=2806491756-250528-996065984530606&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HhDwRpz0UVEnTU53LElAlx3dXOs%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1')"></div>
+        <div onclick="window.open('https://thumbnail0.baidupcs.com/thumbnail/0f3a43305g63f3ebe47309be7cf06299?fid=2806491756-250528-1012989922477272&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-%2bjTL7w408eXQFkqXYeopfZ17NSs%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1')"></div>
+        <div onclick="window.open('https://thumbnail0.baidupcs.com/thumbnail/cd1a2950fl45cbc03a51087409af830d?fid=2806491756-250528-1033611212116289&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-fCZjFCVuNIXlLV7Dt%2bfQFFwLhRk%3d&expires=8h&chkbd=0&chkv=0&dp-logid=283031883304001065&dp-callid=0&time=1667790000&size=c1536_u864&quality=90&vuk=2806491756&ft=image&autopolicy=1')"></div>
+
+    </section>
+
+    
+
+    <audio  autoplay="autoplay" loop  id="music">
+        <source src="http://music.163.com/song/media/outer/url?id=1474400749" audio="" >
+    </audio>
+    
+    
+    
+</body>
+
+</html>
